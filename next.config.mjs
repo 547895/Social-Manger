@@ -10,6 +10,10 @@ const nextConfig = {
     domains: ['blob.v0.dev'],
     unoptimized: true,
   },
+  // Ensure proper routing
+  trailingSlash: false,
+  // Fix for deployment
+  output: 'standalone',
 }
 
 export default nextConfig
